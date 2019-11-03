@@ -11,15 +11,64 @@
   background-image: url("../img/mail-background.svg");
   background-repeat: repeat;
   border-radius: 15px;
-  border: 1px solid transparent;
 }
 
 .subscription-inner {
-  margin: 6px;
   width: calc(100% - 12px);
   min-height: calc(220px - 12px);
+  margin: 6px;
+  padding: 27px 19px 32px;
 
   background-color: #f8f7f4;
   border-radius: 15px;
   border: 1px solid transparent;
+}
+
+.subscription-text {
+  margin: 0;
+  /*margin-top: 26px;*/
+}
+
+.subscription__form {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 37px;
+}
+
+.subscription-email {
+  flex-grow: 1;
+
+  height: 44px;
+  padding: 0 13px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #323232;
+
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+}
+
+.subscription-email::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #999999; 
+}
+
+.subscription-email:hover {
+  border: 2px solid #c7c6c5;
+}
+
+.subscription-email:focus {
+  outline: none;
+  border: 2px solid #8fbdec;
+}
+
+.subscription-button {
+  margin-left: 12px;
+  margin-right: 1px;
+  padding: 9px 18px;
 }

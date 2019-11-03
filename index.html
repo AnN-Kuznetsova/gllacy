@@ -208,7 +208,7 @@
           <h2 class="visually-hidden">Хиты продаж</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
-              <h3>
+              <h3 class="catalog-title-wrapper">
                 <a class="catalog-title" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               </h3>
               <a href="">
@@ -250,31 +250,35 @@
           <p class="about-us__info">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
           <ul class="features-list">
             <li class="features-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-            <li class="features-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
             <li class="features-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+            <li class="features-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
             <li class="features-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
           </ul>
         </article>
   
-        <!--  Новости  -->
-        <section class="news">
-          <h2 class="visually-hidden">Новости</h2>
-          <p class="news-text">Новое в нашем блоге</p>
-          <a class="news-info" href="">10 способов сервировки фруктовых щербетов к столу</a>
-        </section>
-  
-        <!--  Подписка  -->
-        <section class="subscription">
-          <div class="subscription-inner">
-            <h2 class="visually-hidden">Подписка на рассылку</h2>
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post"">
-              <label for="subscription-email" class="visually-hidden">Введите Ваш email:</label>
-              <input id="subscription-email" type="email" name="user-email" value="" placeholder="email@example.com">
-              <button class="button button_small" type="submit">Отправить</button>
-            </form>
-          </div>
-        </section>
+        <div class="double-wrapper container">
+          <!--  Новости  -->
+          <section class="news">
+            <h2 class="visually-hidden">Новости</h2>
+            <p class="news-text">Новое в нашем блоге</p>
+            <p class="news-info-wrapper">
+              <a class="news-info" href="">10 способов сервировки фруктовых щербетов к столу</a>
+            </p>
+          </section>
+    
+          <!--  Подписка  -->
+          <section class="subscription">
+            <div class="subscription-inner">
+              <h2 class="visually-hidden">Подписка на рассылку</h2>
+              <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post"">
+                <label for="subscription-email" class="visually-hidden">Введите Ваш email:</label>
+                <input class="subscription-email" id="subscription-email" type="email" name="user-email" value="" placeholder="email@example.com">
+                <button class="button button_small subscription-button" type="submit">Отправить</button>
+              </form>
+            </div>
+          </section>
+        </div>
   
         <!--  Контакты  -->
         <section class="contacts">

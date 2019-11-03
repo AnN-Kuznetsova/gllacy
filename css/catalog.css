@@ -23,6 +23,11 @@
   /*background-color: rgba(255, 0, 0, 0.2);*/
 }
 
+.catalog-title-wrapper {
+  margin: 0;
+  margin-top: 12px;
+}
+
 .catalog-title {
   margin: 0;
 
@@ -48,6 +53,7 @@
 }
 
 .catalog-photo {
+  display: block;
   width: 100%;
 
   border-radius: 50%;
@@ -57,7 +63,7 @@
   position: absolute;
   z-index: 1;
   left: 0;
-  top: 200px;
+  top: 165px;
 
   font-size: 45px;
   line-height: 45px;

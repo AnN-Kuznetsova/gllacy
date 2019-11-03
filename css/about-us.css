@@ -2,6 +2,8 @@
 
 .about-us {
   width: 1146px;
+  margin-top: 39px;
+  padding: 23px 19px 14px;
 
   font-weight: normal;
   color: #323232;
@@ -10,17 +12,33 @@
   background-image: url("../img/waffle-background.jpg");
   background-repeat: repeat;
   border-radius: 15px;
+  border: 1px solid transparent;
 }
 
 .about-us__info {
+  margin: 0;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
 }
 
 .features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   margin: 0;
+  margin-top: 10px;
   padding: 0;
 
   list-style: none;
+  outline: 1px solid red;
+}
+
+.features-item {
+  width: 540px;
+  padding: 12px 10px 11px 56px;
+
+  outline: 1px solid green;
 }
