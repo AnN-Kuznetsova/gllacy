@@ -1,0 +1,161 @@
+/*  promo-slider  */
+
+.promo-slider {
+  position: relative;
+
+  /*outline: 1px solid red;*/
+}
+
+.slider-controls {
+  position: absolute;  
+  left: 0;
+  bottom: 21px;
+  z-index: 20;
+}
+
+.slider-controls label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 21px;
+  height: 21px;
+  margin-right: 4px;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label:hover,
+.slider-controls label:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.site-wrapper-toggle:first-child:checked ~ .site-wrapper .slider-controls label[for="product-1"],
+.site-wrapper-toggle:nth-child(2):checked ~ .site-wrapper .slider-controls label[for="product-2"],
+.site-wrapper-toggle:nth-child(3):checked ~ .site-wrapper .slider-controls label[for="product-3"] {
+  background-color: #ffffff;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+  position: relative;
+
+  /*outline: 3px solid yellow;*/
+}
+
+.site-wrapper-toggle:first-child:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/backlight-green.png");
+}
+
+.site-wrapper-toggle:nth-child(2):checked ~ .site-wrapper {
+  background-color: #8996a6;  
+  background-image: url("../img/backlight-blue.png");
+}
+
+.site-wrapper-toggle:nth-child(3):checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/backlight-brown.png");
+}
+
+.site-wrapper-toggle:first-child:checked ~ .site-wrapper .slider-item:first-child,
+.site-wrapper-toggle:nth-child(2):checked ~ .site-wrapper .slider-item:nth-child(2),
+.site-wrapper-toggle:nth-child(3):checked ~ .site-wrapper .slider-item:nth-child(3)
+{
+  display: block;
+}
+
+.slider-photo {
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  /*z-index: 0;*/
+
+  transform: translateX(-50%);
+}
+
+.slider-title {
+  /*z-index: 10;*/
+  width: 700px;
+  margin: 0 auto;
+  padding: 275px 0 0;
+  
+  font-size: 60px;
+  line-height: 60.35px;
+  font-weight: bold;
+}
+
+.slider-button {
+  margin-top: 30px;
+  margin-bottom: 42px;
+}
+
+
+/*  Промо-акции  */
+
+.promo-stocks-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.promo-stocks-item {
+  display: flex;
+  flex-direction: column;
+
+  width: 560px;
+  min-height: 230px;
+  padding: 16px 18px 25px;
+
+  border-radius: 15px;
+}
+
+.promo-stocks-item_raspberry {
+  background-color: #b81e3d;
+  background-image: url("../img/raspberry-background.jpg");
+  background-repeat: no-repeat;
+  background-position: -94px -50px;
+}
+
+.promo-stocks-item_chocolate {
+  background-color: #513224;
+  background-image: url("../img/chocolate-background.jpg");
+  background-repeat: no-repeat;
+  background-position: -218px -104px;
+}
+
+.promo-stocks-title {
+  margin: 0;
+
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.promo-stocks-text {
+  margin: 16px 0;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.promo-stocks-button {
+  margin: 0;
+  margin-left: auto;
+  margin-top: auto; 
+  margin-right: 3px;
+}

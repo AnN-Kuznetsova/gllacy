@@ -1,0 +1,26 @@
+/*  О нас  */
+
+.about-us {
+  width: 1146px;
+
+  font-weight: normal;
+  color: #323232;
+
+  background-color: #ece0c8;
+  background-image: url("../img/waffle-background.jpg");
+  background-repeat: repeat;
+  border-radius: 15px;
+}
+
+.about-us__info {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

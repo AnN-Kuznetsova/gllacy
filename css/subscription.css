@@ -1,0 +1,25 @@
+/*  Подписка  */
+
+.subscription {
+  width: 560px;
+  min-height: 220px;
+
+  color: #5a5a5a;
+  font-weight: normal;
+
+  background-color: #f8f7f4;
+  background-image: url("../img/mail-background.svg");
+  background-repeat: repeat;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+
+.subscription-inner {
+  margin: 6px;
+  width: calc(100% - 12px);
+  min-height: calc(220px - 12px);
+
+  background-color: #f8f7f4;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}

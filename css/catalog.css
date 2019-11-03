@@ -1,0 +1,75 @@
+/*  Список товаров  */
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column-reverse;
+
+  position: relative;
+  width: 267px;
+
+  text-align: center;
+
+  outline: 1px solid red;
+  /*background-color: rgba(255, 0, 0, 0.2);*/
+}
+
+.catalog-title {
+  margin: 0;
+
+  font: inherit;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.catalog-title:hover,
+.catalog-title:focus {
+  color: #ffbc9e;
+  border-color: rgba(255, 188, 158, 0.3);
+}
+
+.catalog-title:active {
+  color: #ffbc9e;
+  border-color: rgba(255, 188, 158, 0.3);
+}
+
+.catalog-photo {
+  width: 100%;
+
+  border-radius: 50%;
+}
+
+.catalog-price {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 200px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.catalog-price span {
+  font-size: 30px;
+}
+
+.catalog-button {
+  display: none;
+}
