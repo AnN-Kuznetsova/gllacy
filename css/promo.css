@@ -77,13 +77,15 @@
   position: absolute;
   top: -34px;
   left: 50%;
-  /*z-index: 0;*/
+  z-index: 0;
 
   transform: translateX(-50%);
 }
 
 .slider-title {
-  /*z-index: 10;*/
+  position: relative;
+  z-index: 10;
+
   width: 700px;
   margin: 0 auto;
   padding: 275px 0 0;
@@ -91,6 +93,7 @@
   font-size: 60px;
   line-height: 60.35px;
   font-weight: bold;
+  text-align: center;
 }
 
 .slider-button {
@@ -101,6 +104,8 @@
 /*  Промо-акции  */
 
 .promo-stocks-list {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
